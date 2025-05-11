@@ -4,16 +4,16 @@ import React, { useEffect, useState } from 'react';
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Jessica Thompson",
     role: "Marketing Director",
     company: "TechGrowth Inc.",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     content: "Since working with WebAscend on our website redesign, our conversion rate has increased by 37%. Their team took the time to understand our business goals and delivered a solution that exceeds our expectations. The SEO work they did has helped us rank #1 for several key industry terms.",
     platform: "LinkedIn"
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Daniel Kim",
     role: "Founder & CEO",
     company: "NexusApps",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
@@ -22,16 +22,16 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
+    name: "Sophia Martinez",
     role: "E-Commerce Manager",
     company: "StyleHub",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     content: "Our Shopify store was underperforming until we hired WebAscend. They completely revamped our UX/UI, optimized product pages, and integrated critical analytics. Since the redesign, our abandoned cart rate dropped by 42% and overall sales have doubled. Highly recommend!",
     platform: "LinkedIn"
   },
   {
     id: 4,
-    name: "James Wilson",
+    name: "Robert Chen",
     role: "Digital Director",
     company: "Global Services Ltd",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
