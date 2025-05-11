@@ -8,7 +8,8 @@ const testimonials = [
     role: "Marketing Director",
     company: "TechGrowth Inc.",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    content: "WebAscend completely transformed our online presence. Their web development team created a beautiful, responsive website that has significantly increased our conversions. The SEO work they did helped us achieve top rankings for our most important keywords."
+    content: "Since working with WebAscend on our website redesign, our conversion rate has increased by 37%. Their team took the time to understand our business goals and delivered a solution that exceeds our expectations. The SEO work they did has helped us rank #1 for several key industry terms.",
+    platform: "LinkedIn"
   },
   {
     id: 2,
@@ -16,7 +17,8 @@ const testimonials = [
     role: "Founder & CEO",
     company: "NexusApps",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    content: "The mobile app developed by WebAscend for our startup has been a game-changer. They understood our vision perfectly and delivered an intuitive, feature-rich app that our users love. Their ongoing support has been equally impressive."
+    content: "WebAscend developed our mobile app from concept to launch in just 3 months. Their agile approach and technical expertise were impressive. The app has a 4.8-star rating and 50,000+ downloads in its first quarter. Their post-launch support has been equally outstanding.",
+    platform: "Google"
   },
   {
     id: 3,
@@ -24,7 +26,8 @@ const testimonials = [
     role: "E-Commerce Manager",
     company: "StyleHub",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    content: "Our Shopify store was struggling with conversions until we partnered with WebAscend. Their team redesigned the entire user experience and optimized our product pages. Our sales have increased by 200% since the relaunch."
+    content: "Our Shopify store was underperforming until we hired WebAscend. They completely revamped our UX/UI, optimized product pages, and integrated critical analytics. Since the redesign, our abandoned cart rate dropped by 42% and overall sales have doubled. Highly recommend!",
+    platform: "LinkedIn"
   },
   {
     id: 4,
@@ -32,7 +35,8 @@ const testimonials = [
     role: "Digital Director",
     company: "Global Services Ltd",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    content: "WebAscend's SEO expertise has taken our organic search presence to new heights. Their data-driven approach and transparent reporting have made them a valued partner. I highly recommend their services to any business looking to grow online."
+    content: "WebAscend's SEO strategy transformed our online presence. After 6 months, organic traffic increased by 215% and we're seeing a 3x ROI on our digital marketing spend. Their team provides detailed monthly reports that clearly show progress. They're true digital partners, not just service providers.",
+    platform: "Google"
   }
 ];
 
@@ -79,7 +83,7 @@ const Testimonials: React.FC = () => {
             What Our <span className="gradient-text">Clients Say</span>
           </h3>
           <p className="max-w-2xl mx-auto text-gray-700 reveal-bottom">
-            We're proud of the results we've achieved for our clients. Here's what they have to say about working with us.
+            Don't just take our word for it - see what our clients have to say about working with us.
           </p>
         </div>
         
@@ -105,9 +109,17 @@ const Testimonials: React.FC = () => {
                               />
                             </div>
                             <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-webascend-blue to-webascend-purple rounded-full flex items-center justify-center text-white">
-                              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11l5-5m0 0l5 5m-5-5v12" />
-                              </svg>
+                              {testimonial.platform === "LinkedIn" ? (
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="0" strokeLinecap="round" strokeLinejoin="round">
+                                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                  <rect x="2" y="9" width="4" height="12"></rect>
+                                  <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                              ) : (
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                  <path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81z"/>
+                                </svg>
+                              )}
                             </div>
                           </div>
                         </div>
@@ -122,6 +134,16 @@ const Testimonials: React.FC = () => {
                           <div>
                             <h4 className="font-bold text-lg">{testimonial.name}</h4>
                             <p className="text-gray-600">{testimonial.role}, {testimonial.company}</p>
+                            <div className="mt-2 flex items-center justify-center md:justify-start">
+                              <span className="text-sm text-gray-500">via {testimonial.platform}</span>
+                              <div className="ml-2 flex">
+                                {[...Array(5)].map((_, i) => (
+                                  <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                  </svg>
+                                ))}
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -147,17 +169,17 @@ const Testimonials: React.FC = () => {
           </div>
         </div>
         
-        {/* Brands/Clients */}
+        {/* Client Logos */}
         <div className="mt-24">
           <h4 className="text-center text-gray-500 mb-8 reveal-bottom">Trusted by innovative companies</h4>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            {['Brand', 'Brand', 'Brand', 'Brand', 'Brand'].map((_, index) => (
+            {['Google', 'Microsoft', 'Adobe', 'Shopify', 'Slack'].map((brand, index) => (
               <div 
                 key={index} 
-                className="w-32 h-16 bg-white/50 rounded-lg flex items-center justify-center reveal-bottom"
+                className="w-32 h-16 bg-white/80 rounded-lg flex items-center justify-center reveal-bottom shadow-sm hover:shadow-md transition-all"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-24 h-8 bg-gray-200/50 rounded"></div>
+                <span className="font-semibold text-gray-600">{brand}</span>
               </div>
             ))}
           </div>
