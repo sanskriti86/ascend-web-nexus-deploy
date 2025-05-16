@@ -9,6 +9,8 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 const Index: React.FC = () => {
+  console.log("Index component rendering");
+
   useEffect(() => {
     // Update page title and meta information
     document.title = "WebAscend - Digital Agency for Growing Businesses";
