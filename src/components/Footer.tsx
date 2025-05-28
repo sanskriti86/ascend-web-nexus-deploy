@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-webascend-cyan mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:sankalpgour2@gmail.com" className="text-gray-400 hover:text-webascend-cyan transition-colors">sankalpgour2@gmail.com</a>
+                <a href="mailto:sankalpgour2@gmail.com" className="text-gray-400 hover:text-webascend-cyan transition-colors">support@webascend.co.in</a>
               </li>
             </ul>
           </div>
