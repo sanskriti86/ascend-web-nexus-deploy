@@ -47,10 +47,10 @@ const Hero: React.FC = () => {
             
             <div className="flex flex-wrap gap-4 reveal-bottom">
               <a 
-                href="#contact" 
+                href="https://calendly.com/sankalpgour2" target='_blank'
                 className="px-6 py-3 bg-gradient-to-r from-webascend-blue to-webascend-purple text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                Get Started
+                Book a Call
               </a>
               <a 
                 href="#services" 
