@@ -122,7 +122,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h5 className="text-base font-semibold text-gray-900">Email</h5>
-                    <a href="mailto:sankalpgour2@gmail.com" className="text-gray-700 hover:text-webascend-blue transition-colors">sankalpgour2@gmail.com</a>
+                    <a href="mailto:sankalpgour2@gmail.com" className="text-gray-700 hover:text-webascend-blue transition-colors">support@webascend.co.in</a>
                   </div>
                 </div>
               </div>
